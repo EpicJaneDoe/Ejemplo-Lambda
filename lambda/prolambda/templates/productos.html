@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de productos</title>
+</head>
+<body>
+
+<h1>Productos ordenados por precio (usando Lambda)</h1>
+
+<ul>
+    {% for producto in productos %}
+        <li>
+            {{ producto.nombre }} - ${{ producto.precio }}
+        </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
